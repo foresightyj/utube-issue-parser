@@ -3,7 +3,7 @@ import * as github from "@actions/github";
 
 async function run(): Promise<void> {
   try {
-    const githubToken: string = core.getInput("githubToken", {required: true});
+    const githubToken: string = core.getInput("github-token", {required: true});
 
     const issue = github.context.payload.issue;
     if (!issue) {

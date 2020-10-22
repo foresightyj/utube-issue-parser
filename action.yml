@@ -2,7 +2,7 @@ name: 'utube-issue-parser'
 description: 'Parses issue for utube url'
 author: 'foresightyj'
 inputs:
-  githubToken: # change this
+  github-token:
     required: true
     description: 'GITHUB_TOKEN'
 runs:
