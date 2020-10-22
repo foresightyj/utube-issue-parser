@@ -1,11 +1,10 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'utube-issue-parser'
+description: 'Parses issue for utube url'
+author: 'foresightyj'
 inputs:
-  milliseconds: # change this
+  githubToken: # change this
     required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+    description: 'GITHUB_TOKEN'
 runs:
   using: 'node12'
   main: 'dist/index.js'

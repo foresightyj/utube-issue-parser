@@ -25,6 +25,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@actions/github": "^2.0.1",
     "@actions/core": "^1.2.6"
   },
   "devDependencies": {
