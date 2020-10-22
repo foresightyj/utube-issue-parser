@@ -2208,7 +2208,7 @@ const github = __importStar(__webpack_require__(335));
 function run() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
-            const githubToken = core.getInput("githubToken", { required: true });
+            const githubToken = core.getInput("github-token", { required: true });
             const issue = github.context.payload.issue;
             if (!issue) {
                 core.debug("no issue, return");
