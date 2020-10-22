@@ -7,12 +7,11 @@ async function run(): Promise<void> {
 
     const issue = github.context.payload.issue;
     if (!issue) {
-      core.debug("no issue, return");
+      core.warning("no issue, return");
       return;
     }
-
-    core.debug(`issue number: ${issue.number}`);
-    core.debug(`issue body: ${issue.body}`);
+    core.warning(`issue number: ${issue.number}`);
+    core.warning(`issue body: ${issue.body}`);
     // const client = new github.GitHub(githubToken);
     core.setOutput("issue body", issue.body);
   } catch (error) {
